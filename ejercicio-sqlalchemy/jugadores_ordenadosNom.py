@@ -22,4 +22,9 @@ session = Session()
 # Obtener todos los registros de·
 # la tabla Jugadores ordenados por el nombre
 jugadores= session.query(Jugador).order_by(Jugador.nombre_jug).all()
-print(jugadores)
+
+print("Listado de jugadores Ordenados por su nombre")
+for j in jugadores:
+    #Impresion de cada jugador
+    print("%s" % (j)) 
+    
