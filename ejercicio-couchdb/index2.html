@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo Jquery y JqueryUI</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--link rel="stylesheet" href="estilos/estilos.css" type="text/css" /-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    
+      <h1>Ejemplo de Uso de Jquery + CouchDB</h1>
+
+  </body>
+  <script>
+    $(document).ready(function() {
+      $.ajax({
+            dataType: 'json',
+            url: "http://127.0.0.1:5984/mundial2018/_all_docs?include_docs=True"
+            }).then(function(data) {
+              
+              
+
+            });
+    });
+  </script>
+</html>
